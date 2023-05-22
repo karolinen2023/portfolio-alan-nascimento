@@ -1,0 +1,366 @@
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../font/OpenSans/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("../font/OpenSans/OpenSans-Regular.ttf");
+}
+
+body {
+    background-color: #0a192f;
+    overflow-x: hidden;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'OpenSans-Regular';
+    color: #ccd6f6;
+
+}
+
+header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 80%;
+}
+
+.nav-list {
+    /* JUNTAS AS LISTA, UMA DO LADO DA OUTRA */
+    list-style: none;
+    display: flex;
+    column-gap: 10px;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.nav-list li {
+    /* ESPAÇAMENTO DAS LETRAS */
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ccd6f6;
+}
+
+.number-menu {
+    color: #4dabf7;
+}
+
+.logo {
+    background-color: #0a192f;
+    height: 100px;
+}
+
+.menu {
+    background-color: #0a192f;
+    display: grid;
+    justify-content: right;
+    align-items: center;
+    margin-right: 0px;
+}
+
+.icon-menu{
+    display: none;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 700px 400px 450px;
+
+}
+
+@media (max-width: 500px) {
+
+    .icon-menu{
+        display: unset;
+    }
+
+    .menu{
+
+        position: absolute;
+        left: 0; 
+        margin: 0;
+
+    }
+
+ .nav-list{
+    display: block;
+    padding-inline-start: 0px;
+    margin: 5px;
+ }
+ .nav-list li{
+margin-left: 0;
+ }
+
+ .menu-reponsive {
+    border: 1px solid #4dabf7;
+    margin-top: 5px;
+    padding: 5px;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      display: none;
+    }
+    100% {
+      opacity: 1;
+      display: block;
+    }
+  }
+  
+  
+  
+li{
+   
+}
+}
+
+.icon-menu{
+    font-size: 30px;
+    color: #4dabf7;
+}
+
+.text-subtitle{
+    color: #4dabf7;
+}
+
+.cv-company{
+    color: #4dabf7;
+}
+
+.cv-title{
+    font-weight: bold;
+}
+
+.presentation {
+    background-color: #0a192f;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 80%;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 25px;
+}
+
+.presentation .my-name {
+    color: #ccd6f6;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+}
+
+.presentation .name {
+    font-size: 65px;
+    color: #4dabf7;
+    font-family: 'OpenSans-Bold';
+    line-height: 1.2;
+    letter-spacing: 1.0;
+}
+
+.presentation .who-i-am {
+    color: #ccd6f6;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+}
+
+.presentation .description {
+    color: #ccd6f6;
+    background-color: #0a192f;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+}
+
+.presentation button {
+    background-color: #1B17EA;
+    border: 0px solid black;
+    color: #bec6e2;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 16px;
+    transition: background-color 0.5s ease;
+    /* adiciona uma transição suave na mudança da cor de fundo */
+}
+
+.presentation button:hover {
+    background-color: hsl(18, 98%, 64%);
+    color: #f3f4f8;
+    /* altera a cor de fundo quando o botão é passado o mouse sobre ele */
+    cursor: pointer;
+    /* altera o cursor do mouse para indicar que o botão é clicável */
+}
+
+
+
+.about-me {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.about-me .history{
+    letter-spacing: 1.5;
+    line-height: 1.5;
+}
+
+.about-me .photo{
+
+}
+
+.about-me-soft-skill span{
+color: #4dabf7;
+}
+
+.works {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+}
+
+.works .experience{
+
+
+}
+
+.works .tab-xp{
+    display: grid;
+    grid-template-columns: 22% 50%;
+}
+
+.works .tab-company-xp ul{
+    display: inline-block;  
+}
+
+.works .tab-company-xp li{
+    list-style: none;
+    border-left: 1px solid #f3f4f8;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.works .tab-company-xp .active{
+    list-style: none;
+    border: 1px solid #1B17EA;
+    transition: border 10.5s ease;
+    color: #1B17EA;
+    background-color: #f3f4f8;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.works .tab-company-descr{
+    display: flex;
+    margin-top: 20px;
+    padding-left: 30px;
+    gap: 30px;
+}
+
+.works .tabcontent-company{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 20px;
+    border: 1px solid #4dabf7;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 100px 180px; 
+    justify-content: center;
+}
+
+.projects-person{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+}
+
+.project{
+    background-color: #051329;
+    border: 1px solid #4dabf7;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.project a{
+    text-decoration: none;
+    color: #f3f4f8;
+}
+
+.project .project-title{
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.project-title{
+font-weight: bold;
+color: #4dabf7;
+}
+
+.project-list-tech{
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 1px solid 
+    
+}
+
+.project-list-tech li{
+    display: inline-block;
+    border: 1px solid #1B17EA;
+    background: #1B17EA;
+    padding: 3px;
+    border-radius: 3px;
+    list-style: none;
+}
+
+
+.contact {
+    display: grid;
+    grid-template-columns: 80%;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-mail{
+    height: 100px;
+}
+
+.contact-name{
+    background-color: blue;
+}
+
+.contact-social{
+    margin-top: 10px;
+}
+
+.contact span{
+    color: #4dabf7;
+}
+
+.contact i{
+    font-size: 30px;
+    color: #4dabf7;
+
+}
+

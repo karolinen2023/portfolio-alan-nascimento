@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alan Nascimento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+            </div>
+            <nav class="menu">
+                <ul class="nav-list">
+                    <li><a href="#"><i class="fa-solid fa-bars icon-menu"></i></a></li>
+                    <li class="menu-reponsive hidden"><a href=""><span class="number-menu">01.</span> Sobre</a></li>
+                    <li class="menu-reponsive hidden"><a href=""><span class="number-menu">02.</span> Experiência</a>
+                    </li>
+                    <li class="menu-reponsive hidden"><a href="#linkworks"><span class="number-menu">03.</span>
+                            Trabalho</a></li>
+                    <li class="menu-reponsive hidden"><a href=""><span class="number-menu">04.</span> Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="presentation">
+                <span>
+                    <span class="my-name">Oi, meu nome é</span><br>
+                    <span class="name">ALAN NASCIMENTO</span><br>
+                    <span class="who-i-am">Eu sou Desenvolvedor Sites.</span><br>
+                    <span class="description">Eu tenho experiência profissional em Programação. <br>
+                        Além de trabalhar com programação, estudo para aumentar cada vez mais<br>
+                        o meu nível de programação. </span><br>
+                    <button>Currículo</button>
+                </span>
+
+            </div>
+            <div class="about-me">
+                <div class="history">
+                    <h1 class="text-subtitle">1. Sobre mim</h1>
+                    Eu sou um desenvolvedor de sistemas apaixonado por tecnologia desde a minha infância.<br> <br>
+                    Sempre tive interesse em programação, mas não acabei conseguindo oportunidade na área
+                    de programação tão cedo.
+
+                    No entanto, o meu amor pela programação nunca morreu. Eu sempre mantive contato com
+                    a área, estudando por conta própria e desenvolvendo projetos pessoais sempre
+                    que possível. <br><br>
+                    Eu me formei em Análise e Desenvolvimento de Sistemas,
+                    aprofundando ainda mais o meu conhecimento na área.<br><br>
+
+                    Atualmente, estou dedicando todo o meu tempo para desenvolver projetos incríveis
+                    e aumentar ainda mais o meu conhecimento. Para isso, faço cursos online,
+                    como os dos site da Udemy, além de estar sempre em busca de novas tecnologias
+                    e ferramentas que possam me ajudar a criar soluções inovadoras.<br><br>
+
+                    <div class="about-me-soft-skill">
+                        Conhecimento em: <span>React, Node, Laravel, PHP, CSS, JQuery e JavaScript</span>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="assets/img/alan.png" width="500">
+                </div>
+            </div>
+            <div class="works">
+                <div class="experience" id="linkworks">
+                    <h1 class="text-subtitle">2. Experiência Profissional</h1>
+                    <div class="tab-xp">
+                        <div class="tab-company-xp">
+                            <ul>
+                                <li id="defaultOpen" class="tablink-company" href="#"
+                                    onclick="openCompany(event, 'guard')">Guard Informatica</li>
+                                <li class="tablink-company" href="#" onclick="openCompany(event, 'sonda')">Sonda
+                                    IT</li>
+                                <li class="tablink-company" href="#" onclick="openCompany(event, 'capgemini')">Capgemini
+                                </li>
+                                <li class="tablink-company" href="#" onclick="openCompany(event, 'it2b')">IT2B
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-company-descr">
+                            <div class="tabcontent-company" id="guard">
+                                <div class="cv-title">Auxiliar de Programação
+                                    <span class="cv-company">@GUARD INFORMÁTICA</span>
+                                </div>
+                                <div class="cv-day-work">03/2022 até o momento</div>
+                                <div class="cv-experience">
+                                    <ul>
+                                        <li>Desenvolvimento de Sistemas utilizando linguagem PHP, CSS, HTML, Bootstrap e
+                                            jQuery.</li>
+                                        <li>Manutenção de sistemas Backend e Frontend.</li>
+                                        <li>Resolução de problemas e criação de funcionalidades</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabcontent-company" id="sonda">
+                                <div class="cv-title">Técnico de Infraestrutura
+                                    <span class="cv-company">@CTIS (GRUPO SONDA IT)</span>
+                                </div>
+                                <div class="cv-day-work">10/2020 até 09/2021</div>
+                                <div class="cv-experience">
+                                    <ul>
+                                        <li>Configuração de impressoras na rede.</li>
+                                        <li>Troca de Peças.</li>
+                                        <li>Atendimento ao usuário.</li>
+                                        <li>Controle de estoque de suprimentos de impressoras.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabcontent-company" id="capgemini">
+                                <div class="cv-title">Técnico de Infraestrutura
+                                    <span class="cv-company">@CAPGEMINI</span>
+                                </div>
+                                <div class="cv-day-work">08/2018 até 04/2019</div>
+                                <div class="cv-experience">
+                                    <ul>
+                                        <li>Abertura e fechamento de chamados</li>
+                                        <li>Resolução de problemas de aplicação do Windows, como por exemplo: Pacote
+                                            Office,
+                                            Navegadores de Internet, Power BI, SAS, SAP, etc.
+                                        </li>
+                                        <li>Instalação de software</li>
+                                        <li>Atendimento ao usuário e suporte remoto.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabcontent-company" id="it2b">
+                                <div class="cv-title"> Operador de Impressão
+                                    <span class="cv-company">@IT2B</span>
+                                </div>
+                                <div class="cv-day-work">07/2021 até 06/2017</div>
+                                <div class="cv-experience">
+                                    <ul>
+                                        <li>Configuração de impressoras na rede.</li>
+                                        <li>Troca de Peças.</li>
+                                        <li>Gerenciamento de Chamados</li>
+                                        <li>Controle de estoque de suprimentos de impressoras.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <h1 class="text-subtitle">3. Projetos</h1>
+                <div class="projects-person">
+
+                    <div class="project">
+                        <a href="https://github.com/alanpn2020/site_filmes_api" target="_blank"
+                            title="Ver o código no GITHUB">
+                            <div><img src="assets/img/folder.png" width="35" height="30"></div>
+                            <div class="project-title">CATÁLOGO DE FILMES (REACT)</div>
+                            <div class="project-descr">
+                                Este catálogo de filmes é desenvolvido com o uso de APIs,
+                                permitindo listem e visualizem filmes por categoria,
+                                salvem e até mesmo de sua lista.
+                            </div>
+                            <div class="project-tech">
+                                <ul class="project-list-tech">
+                                    <li>REACT</li>
+                                    <li>NODE</li>
+                                    <li>JAVASCRIPT</li>
+                                    <li>CSS</li>
+                                </ul>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="project">
+                        <a href="https://github.com/alanpn2020/todolist-Firebase-Add-Edit-Remove-and-Search"
+                            target="_blank" title="Ver o código no GITHUB">
+                            <div><img src="assets/img/folder.png" width="35" height="30"></div>
+                            <div class="project-title">LISTA DE TAREFA (FLUTTER)</div>
+                            <div class="project-descr">
+                                Essa aplicação é uma aplicação de lista de tarefa, que permite adicionar,editar e
+                                alterar.
+                                Foi utilizado banco de dados Real Time Firebase e utilizado Flutter.
+                            </div>
+                            <div class="project-tech">
+                                <ul class="project-list-tech">
+                                    <li>FLUTTER</li>
+                                    <li>DART</li>
+                                    <li>FIREBASE</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project">
+                        <a href="https://github.com/alanpn2020/gerador_gradiente_css_javascript" target="_blank"
+                            title="Ver o código no GITHUB">
+                            <div><img src="assets/img/folder.png" width="35" height="30"></div>
+                            <div class="project-title">GERADOR DE GRADIENT (JAVASCRIPT)</div>
+                            <div class="project-descr">
+                                Essa aplicação desenvolvido em Javascript, é permitido gerar gradiente e ao mesmo
+                                tempo visualizar. Pode ser escolhido até 4 tipos de cores.
+                            </div>
+                            <div class="project-tech">
+                                <ul class="project-list-tech">
+                                    <li>JAVASCRIPT</li>
+                                    <li>CSS</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="contact">
+                <div class="contact-mail">
+                    <div><span>Email:</span> alanpn@outlook.com.br</div>
+                    <div><span>Contato:</span> 11-98447-7317</div>
+                    <div class="contact-social">
+                        <a href="https://www.instagram.com/alan_n2010/" target="_blank"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.facebook.com/alannascimentto" target="_blank"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/alan-nascimento-a9b274b2/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5511984477317" target="_blank"><i
+                                class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    </div>
+
+    <script type="text/javascript">
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var iconMenu = document.querySelector('.icon-menu');
+            var menuResponsiveItems = document.querySelectorAll('.menu-reponsive');
+
+            menuResponsiveItems.forEach(function (item) {
+
+            });
+
+            window.addEventListener('resize', function () {
+                // Obtém a largura atual da janela
+                var larguraJanela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+                // Verifica se a largura da janela é menor que 700 pixels
+                if (larguraJanela < 700) {
+                    // Executa ação quando a largura for menor que 700 pixels
+                    menuResponsiveItems.forEach(function (item) {
+                        item.style.display = 'none';
+                    });
+
+                    // Aqui você pode adicionar o código para executar a ação desejada
+                    // Por exemplo, pode chamar uma função específica ou modificar o conteúdo da página
+                }
+            });
+
+
+
+
+            iconMenu.addEventListener('click', function () {
+                menuResponsiveItems.forEach(function (item) {
+                    if (item.style.display === 'none') {
+                        item.style.display = 'block';
+                        item.classList.add('fade-in');
+                        item.classList.remove('fade-out');
+                    } else {
+                        item.classList.add('fade-out');
+                        item.classList.remove('fade-in');
+
+                        setTimeout(function () {
+                            item.style.display = 'none';
+                        }, 500);
+                    }
+                });
+            });
+        });
+
+        //ir para o link
+        var linkTrabalho = document.querySelector('.menu-reponsive.hidden a[href="#linkworks"]');
+
+        linkTrabalho.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            var worksSection = document.getElementById('linkworks');
+            var offset = worksSection.offsetTop;
+            var duration = 4800; // duração da animação em milissegundos
+            var start = window.pageYOffset;
+            var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+
+            var scroll = function () {
+                var now = 'now' in window.performance ? performance.now() : new Date().getTime();
+                var time = Math.min(1, ((now - startTime) / duration));
+                var distance = offset * time;
+                window.scrollTo(0, start + distance);
+
+                if (distance < offset) {
+                    requestAnimationFrame(scroll);
+                }
+            };
+
+            scroll();
+        });
+
+
+
+        function openCompany(evt, companyName) {
+            // Pega todos os elementos com a classe "tabcontent-company"
+            var tabcontent = document.getElementsByClassName("tabcontent-company");
+            // Pega todos os elementos com a classe "tablink-company"
+            var tablinks = document.getElementsByClassName("tablink-company");
+
+            // Percorre todos os elementos com a classe "tabcontent-company"
+            for (var i = 0; i < tabcontent.length; i++) {
+                // Esconde todos os elementos com a classe "tabcontent-company"
+                tabcontent[i].style.display = "none";
+            }
+
+            // Percorre todos os elementos com a classe "tablink-company"
+            for (var i = 0; i < tablinks.length; i++) {
+                // Remove a classe "active" de todos os elementos com a classe "tablink-company"
+                tablinks[i].classList.remove("active");
+            }
+
+            // Exibe o conteúdo da empresa selecionada
+            document.getElementById(companyName).style.display = "block";
+
+            // Adiciona a classe "active" ao elemento clicado
+            evt.currentTarget.classList.add("active");
+        }
+
+        // Deixa o primeiro elemento com a classe "tablink-company" selecionado
+        document.getElementById("defaultOpen").click();
+
+
+
+
+
+    </script>
+</body>
+
+</html>
