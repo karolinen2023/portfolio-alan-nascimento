@@ -62,7 +62,7 @@ header {
     margin-right: 0px;
 }
 
-.icon-menu{
+.icon-menu {
     display: none;
 }
 
@@ -70,83 +70,25 @@ main {
     display: grid;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 400px 700px 400px 450px;
+    grid-template-rows: 400px 700px 430px 430px;
 
 }
 
-@media (max-width: 500px) {
 
-    .icon-menu{
-        display: unset;
-    }
-
-    .menu{
-
-        position: absolute;
-        left: 0; 
-        margin: 0;
-
-    }
-
- .nav-list{
-    display: block;
-    padding-inline-start: 0px;
-    margin: 5px;
- }
- .nav-list li{
-margin-left: 0;
- }
-
- .menu-reponsive {
-    border: 1px solid #4dabf7;
-    margin-top: 5px;
-    padding: 5px;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      display: none;
-    }
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      display: none;
-    }
-    100% {
-      opacity: 1;
-      display: block;
-    }
-  }
-  
-  
-  
-li{
-   
-}
-}
-
-.icon-menu{
+.icon-menu {
     font-size: 30px;
     color: #4dabf7;
 }
 
-.text-subtitle{
+.text-subtitle {
     color: #4dabf7;
 }
 
-.cv-company{
+.cv-company {
     color: #4dabf7;
 }
 
-.cv-title{
+.cv-title {
     font-weight: bold;
 }
 
@@ -208,27 +150,25 @@ li{
 }
 
 
-
 .about-me {
     display: grid;
     grid-template-columns: 40% 40%;
     justify-content: center;
     justify-items: center;
     align-items: center;
-
 }
 
-.about-me .history{
+.about-me .history {
     letter-spacing: 1.5;
     line-height: 1.5;
 }
 
-.about-me .photo{
-
+.about-me .photo img{
+    width: 500px;
 }
 
-.about-me-soft-skill span{
-color: #4dabf7;
+.about-me-soft-skill span {
+    color: #4dabf7;
 }
 
 .works {
@@ -237,28 +177,25 @@ color: #4dabf7;
     justify-content: center;
 }
 
-.works .experience{
+.works .experience {}
 
-
-}
-
-.works .tab-xp{
+.works .tab-xp {
     display: grid;
     grid-template-columns: 22% 50%;
 }
 
-.works .tab-company-xp ul{
-    display: inline-block;  
+.works .tab-company-xp ul {
+    display: inline-block;
 }
 
-.works .tab-company-xp li{
+.works .tab-company-xp li {
     list-style: none;
     border-left: 1px solid #f3f4f8;
     padding: 20px;
     margin-top: 0;
 }
 
-.works .tab-company-xp .active{
+.works .tab-company-xp .active {
     list-style: none;
     border: 1px solid #1B17EA;
     transition: border 10.5s ease;
@@ -268,64 +205,64 @@ color: #4dabf7;
     font-weight: bold;
 }
 
-.works .tab-company-descr{
+.works .tab-company-descr {
     display: flex;
     margin-top: 20px;
     padding-left: 30px;
     gap: 30px;
 }
 
-.works .tabcontent-company{
+.works .tabcontent-company {
     flex-grow: 1;
     flex-basis: 0;
     padding: 20px;
     border: 1px solid #4dabf7;
 }
 
+
 .projects {
     display: grid;
     grid-template-columns: 80%;
-    grid-template-rows: 100px 180px; 
+    grid-template-rows: 100px 180px;
     justify-content: center;
 }
 
-.projects-person{
+.projects-person {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 300px 300px;
     gap: 15px;
 }
 
-.project{
+.project {
     background-color: #051329;
     border: 1px solid #4dabf7;
     border-radius: 5px;
     padding: 20px;
 }
 
-.project a{
+.project a {
     text-decoration: none;
     color: #f3f4f8;
 }
 
-.project .project-title{
+.project .project-title {
     margin-top: 2px;
     margin-bottom: 8px;
 }
 
-.project-title{
-font-weight: bold;
-color: #4dabf7;
+.project-title {
+    font-weight: bold;
+    color: #4dabf7;
 }
 
-.project-list-tech{
+.project-list-tech {
     list-style: none;
     padding-inline-start: 0;
-    margin: 1px solid 
-    
+    margin: 1px solid
 }
 
-.project-list-tech li{
+.project-list-tech li {
     display: inline-block;
     border: 1px solid #1B17EA;
     background: #1B17EA;
@@ -342,25 +279,174 @@ color: #4dabf7;
     justify-content: center;
 }
 
-.contact-mail{
+.contact-mail {
     height: 100px;
 }
 
-.contact-name{
+.contact-name {
     background-color: blue;
 }
 
-.contact-social{
+.contact-social {
     margin-top: 10px;
 }
 
-.contact span{
+.contact span {
     color: #4dabf7;
 }
 
-.contact i{
+.contact i {
     font-size: 30px;
     color: #4dabf7;
 
 }
 
+@media (max-width: 700px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        grid-template-rows: 10px;
+    }
+
+    main {
+        grid-template-rows: 330px 950px 400px 850px;
+    }
+
+    .presentation {
+        grid-template-columns: 90%;
+        font-size: 18px;
+    }
+
+    .presentation .name {
+        font-size: 24px;
+    }
+
+
+    .about-me {
+
+        grid-template-columns: 90%;
+        justify-content: center;
+    }
+
+    
+    .about-me .photo img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .works {
+        grid-template-columns: 90%;
+    }
+    
+    .works .tab-xp {
+        grid-template-columns: 40% 60%;
+    }
+    
+    .works .tab-company-xp ul {
+        padding-inline-start: 0px;
+    }
+    
+    .works .tab-company-xp li {
+        padding: 0px;
+        margin-top: 0;
+    }
+    
+    .works .tab-company-descr {
+        margin-top: 13px;
+        padding-left: 0px;
+    }
+    
+    .works .tabcontent-company {
+        padding: 5px;
+    }
+
+
+    .projects {
+        grid-template-columns: 90%;
+        grid-template-rows: 100px;
+    }
+    
+    .projects-person {
+        grid-template-columns: 100%;
+        grid-template-rows: 230px;
+        gap: 18px;
+    }
+    
+    .project {
+        padding: 20px;
+    }
+    
+    .project .project-title {
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+    
+    .project-list-tech {
+        padding-inline-start: 0;
+        margin: 3px solid
+    }
+
+    .contact {
+        grid-template-columns: 90%;
+        padding-top: 10px;
+    }
+    
+    /* MENU  */
+    .icon-menu {
+        display: unset;
+    }
+
+    .menu {
+
+        position: absolute;
+        left: 0;
+        margin: 0;
+
+    }
+
+    .nav-list {
+        display: block;
+        padding-inline-start: 0px;
+        margin: 5px;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+    }
+
+    .menu-reponsive {
+        border: 1px solid #4dabf7;
+        margin-top: 5px;
+        padding: 5px;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            display: none;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            display: none;
+        }
+
+        100% {
+            opacity: 1;
+            display: block;
+        }
+    }
+
+    /* FIM MENHU */
+}

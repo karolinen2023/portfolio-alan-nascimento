@@ -22,29 +22,32 @@
             <nav class="menu">
                 <ul class="nav-list">
                     <li><a href="#"><i class="fa-solid fa-bars icon-menu"></i></a></li>
-                    <li class="menu-reponsive hidden"><a href=""><span class="number-menu">01.</span> Sobre</a></li>
-                    <li class="menu-reponsive hidden"><a href=""><span class="number-menu">02.</span> Experiência</a>
+                    <li class="menu-reponsive hidden"><a href="#linkabout"><span class="number-menu">01.</span>
+                            Sobre</a></li>
+                    <li class="menu-reponsive hidden"><a href="#linkxp"><span class="number-menu">02.</span>
+                            Experiência</a>
                     </li>
-                    <li class="menu-reponsive hidden"><a href="#linkworks"><span class="number-menu">03.</span>
-                            Trabalho</a></li>
-                    <li class="menu-reponsive hidden"><a href=""><span class="number-menu">04.</span> Contato</a></li>
+                    <li class="menu-reponsive hidden"><a href="#linkprojects"><span class="number-menu">03.</span>
+                            Projetos</a></li>
+                    <li class="menu-reponsive hidden"><a href="#linkcontact"><span class="number-menu">04.</span>
+                            Contato</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <div class="presentation">
-                <span>
+                <span class="my-presentation">
                     <span class="my-name">Oi, meu nome é</span><br>
                     <span class="name">ALAN NASCIMENTO</span><br>
                     <span class="who-i-am">Eu sou Desenvolvedor Sites.</span><br>
                     <span class="description">Eu tenho experiência profissional em Programação. <br>
                         Além de trabalhar com programação, estudo para aumentar cada vez mais<br>
                         o meu nível de programação. </span><br>
-                    <button>Currículo</button>
+           
                 </span>
 
             </div>
-            <div class="about-me">
+            <div class="about-me" id="linkabout">
                 <div class="history">
                     <h1 class="text-subtitle">1. Sobre mim</h1>
                     Eu sou um desenvolvedor de sistemas apaixonado por tecnologia desde a minha infância.<br> <br>
@@ -67,11 +70,11 @@
                     </div>
                 </div>
                 <div class="photo">
-                    <img src="assets/img/alan.png" width="500">
+                    <img src="assets/img/alan.png">
                 </div>
             </div>
             <div class="works">
-                <div class="experience" id="linkworks">
+                <div class="experience" id="linkxp">
                     <h1 class="text-subtitle">2. Experiência Profissional</h1>
                     <div class="tab-xp">
                         <div class="tab-company-xp">
@@ -123,11 +126,7 @@
                                 <div class="cv-experience">
                                     <ul>
                                         <li>Abertura e fechamento de chamados</li>
-                                        <li>Resolução de problemas de aplicação do Windows, como por exemplo: Pacote
-                                            Office,
-                                            Navegadores de Internet, Power BI, SAS, SAP, etc.
-                                        </li>
-                                        <li>Instalação de software</li>
+                                        <li>Instalação e solução de problemas de software</li>
                                         <li>Atendimento ao usuário e suporte remoto.</li>
                                     </ul>
                                 </div>
@@ -150,7 +149,7 @@
                     </div>
                 </div>
             </div>
-            <div class="projects">
+            <div class="projects" id="linkprojects">
                 <h1 class="text-subtitle">3. Projetos</h1>
                 <div class="projects-person">
 
@@ -219,7 +218,7 @@
 
         <footer>
             <div class="contact">
-                <div class="contact-mail">
+                <div class="contact-mail" id="linkcontact">
                     <div><span>Email:</span> alanpn@outlook.com.br</div>
                     <div><span>Contato:</span> 11-98447-7317</div>
                     <div class="contact-social">
@@ -291,30 +290,39 @@
         });
 
         //ir para o link
-        var linkTrabalho = document.querySelector('.menu-reponsive.hidden a[href="#linkworks"]');
+        // Obtém todos os links do menu
+        var menuLinks = document.querySelectorAll('.menu-reponsive.hidden a');
 
-        linkTrabalho.addEventListener('click', function (event) {
-            event.preventDefault();
+        // Adiciona um evento de clique a cada link do menu
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
 
-            var worksSection = document.getElementById('linkworks');
-            var offset = worksSection.offsetTop;
-            var duration = 4800; // duração da animação em milissegundos
-            var start = window.pageYOffset;
-            var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+                var targetSectionId = this.getAttribute('href'); // Obtém o ID da seção alvo
+                var targetSection = document.querySelector(targetSectionId); // Obtém o elemento da seção alvo
 
-            var scroll = function () {
-                var now = 'now' in window.performance ? performance.now() : new Date().getTime();
-                var time = Math.min(1, ((now - startTime) / duration));
-                var distance = offset * time;
-                window.scrollTo(0, start + distance);
+                if (targetSection) {
+                    var offset = targetSection.offsetTop;
+                    var duration = 4800; // duração da animação em milissegundos
+                    var start = window.pageYOffset;
+                    var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
 
-                if (distance < offset) {
-                    requestAnimationFrame(scroll);
+                    var scroll = function () {
+                        var now = 'now' in window.performance ? performance.now() : new Date().getTime();
+                        var time = Math.min(1, ((now - startTime) / duration));
+                        var distance = offset * time;
+                        window.scrollTo(0, start + distance);
+
+                        if (distance < offset) {
+                            requestAnimationFrame(scroll);
+                        }
+                    };
+
+                    scroll();
                 }
-            };
-
-            scroll();
+            });
         });
+
 
 
 
