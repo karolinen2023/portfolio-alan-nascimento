@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
@@ -240,125 +240,7 @@
 
     </div>
 
-    <script type="text/javascript">
-
-
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var iconMenu = document.querySelector('.icon-menu');
-            var menuResponsiveItems = document.querySelectorAll('.menu-reponsive');
-
-            menuResponsiveItems.forEach(function (item) {
-
-            });
-
-            window.addEventListener('resize', function () {
-                // Obtém a largura atual da janela
-                var larguraJanela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-                // Verifica se a largura da janela é menor que 700 pixels
-                if (larguraJanela < 700) {
-                    // Executa ação quando a largura for menor que 700 pixels
-                    menuResponsiveItems.forEach(function (item) {
-                        item.style.display = 'none';
-                    });
-
-                    // Aqui você pode adicionar o código para executar a ação desejada
-                    // Por exemplo, pode chamar uma função específica ou modificar o conteúdo da página
-                }
-            });
-
-
-
-
-            iconMenu.addEventListener('click', function () {
-                menuResponsiveItems.forEach(function (item) {
-                    if (item.style.display === 'none') {
-                        item.style.display = 'block';
-                        item.classList.add('fade-in');
-                        item.classList.remove('fade-out');
-                    } else {
-                        item.classList.add('fade-out');
-                        item.classList.remove('fade-in');
-
-                        setTimeout(function () {
-                            item.style.display = 'none';
-                        }, 500);
-                    }
-                });
-            });
-        });
-
-        //ir para o link
-        // Obtém todos os links do menu
-        var menuLinks = document.querySelectorAll('.menu-reponsive.hidden a');
-
-        // Adiciona um evento de clique a cada link do menu
-        menuLinks.forEach(function (link) {
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
-
-                var targetSectionId = this.getAttribute('href'); // Obtém o ID da seção alvo
-                var targetSection = document.querySelector(targetSectionId); // Obtém o elemento da seção alvo
-
-                if (targetSection) {
-                    var offset = targetSection.offsetTop;
-                    var duration = 4800; // duração da animação em milissegundos
-                    var start = window.pageYOffset;
-                    var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
-
-                    var scroll = function () {
-                        var now = 'now' in window.performance ? performance.now() : new Date().getTime();
-                        var time = Math.min(1, ((now - startTime) / duration));
-                        var distance = offset * time;
-                        window.scrollTo(0, start + distance);
-
-                        if (distance < offset) {
-                            requestAnimationFrame(scroll);
-                        }
-                    };
-
-                    scroll();
-                }
-            });
-        });
-
-
-
-
-        function openCompany(evt, companyName) {
-            // Pega todos os elementos com a classe "tabcontent-company"
-            var tabcontent = document.getElementsByClassName("tabcontent-company");
-            // Pega todos os elementos com a classe "tablink-company"
-            var tablinks = document.getElementsByClassName("tablink-company");
-
-            // Percorre todos os elementos com a classe "tabcontent-company"
-            for (var i = 0; i < tabcontent.length; i++) {
-                // Esconde todos os elementos com a classe "tabcontent-company"
-                tabcontent[i].style.display = "none";
-            }
-
-            // Percorre todos os elementos com a classe "tablink-company"
-            for (var i = 0; i < tablinks.length; i++) {
-                // Remove a classe "active" de todos os elementos com a classe "tablink-company"
-                tablinks[i].classList.remove("active");
-            }
-
-            // Exibe o conteúdo da empresa selecionada
-            document.getElementById(companyName).style.display = "block";
-
-            // Adiciona a classe "active" ao elemento clicado
-            evt.currentTarget.classList.add("active");
-        }
-
-        // Deixa o primeiro elemento com a classe "tablink-company" selecionado
-        document.getElementById("defaultOpen").click();
-
-
-
-
-
-    </script>
+    <script type="text/javascript" src="assets/javascript/"></script>
 </body>
 
 </html>
