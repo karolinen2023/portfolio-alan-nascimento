@@ -25,34 +25,7 @@ header {
     grid-template-columns: 20% 80%;
 }
 
-.nav-list {
-    /* JUNTAS AS LISTA, UMA DO LADO DA OUTRA */
-    list-style: none;
-    display: flex;
-    column-gap: 10px;
-    margin-right: 40px;
-    font-size: 16px;
-}
-
-.nav-list li {
-    /* ESPAÇAMENTO DAS LETRAS */
-    letter-spacing: 3px;
-    margin-left: 32px;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: #ccd6f6;
-}
-
-.number-menu {
-    color: #4dabf7;
-}
-
-.logo {
-    background-color: #0a192f;
-    height: 100px;
-}
+/* MENU */
 
 .menu {
     background-color: #0a192f;
@@ -65,6 +38,85 @@ header {
 .icon-menu {
     display: none;
 }
+
+.nav-list {
+    /* JUNTAS AS LISTA, UMA DO LADO DA OUTRA */
+    list-style: none;
+    display: flex;
+    column-gap: 10px;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.nav-list li {
+    /* ESPAÇAMENTO DAS LETRAS */
+    letter-spacing: 3px;
+    margin-left: 10px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ccd6f6;
+    padding: 5px 10px;
+    margin: 0px 3px;
+    position: relative;
+    transition: all .5s
+}
+
+.nav-list a:hover {
+    background-color: #0D09C2;
+    color:white;
+  }
+
+  .nav-list a:before {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #0D09C2;
+    border-radius: 2px;
+    border-width: 0 0 3px 3px;
+    opacity: 0;
+    transition: all 0.3s
+  }
+
+  .nav-list a:hover:before {
+    opacity: 1;
+    bottom: -8px;
+    left: -8px;
+  }
+  
+  .nav-list a:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #1B17EA;
+    border-radius: 2px;
+    border-width: 3px 3px 0 0;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  .nav-list a:hover:after {
+    opacity: 1;
+    top: -8px;
+    right: -8px;
+  }
+
+.number-menu {
+    color: #4dabf7;
+}
+
+.logo {
+    background-color: #0a192f;
+    height: 100px;
+}
+/* FIM MENU */
 
 main {
     display: grid;
@@ -415,6 +467,24 @@ main {
 
     .nav-list li {
         margin-left: 0;
+    }
+    .nav-list a {
+        transition: none;
+    }
+
+    .nav-list a:hover {
+        background-color: #0a192f;
+        color:white;
+      }
+
+    .nav-list a:after {
+        transition: none;
+        border: 0px solid #0D09C2;
+    }
+
+    .nav-list a:before {
+        transition: none;
+        border: 0px solid #0D09C2;
     }
 
     .menu-reponsive {

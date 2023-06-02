@@ -52,7 +52,7 @@ menuLinks.forEach(function (link) {
         var targetSection = document.querySelector(targetSectionId);
         if (targetSection) {
             var offset = targetSection.offsetTop;
-            var duration = 4800; 
+            var duration = 2800; 
             var start = window.pageYOffset;
             var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
 
