@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #0a192f;
+    background-color: #2f0a20;
     overflow-x: hidden;
     font-size: 16px;
     margin: 0;
@@ -28,7 +28,7 @@ header {
 /* MENU */
 
 .menu {
-    background-color: #0a192f;
+    background-color: #2f0a21;
     display: grid;
     justify-content: right;
     align-items: center;
@@ -64,7 +64,7 @@ header {
 }
 
 .nav-list a:hover {
-    background-color: #0D09C2;
+    background-color: #9d0e93;
     color:white;
   }
 
@@ -75,7 +75,7 @@ header {
     left: 12px;
     width: 12px;
     height: 12px;
-    border: 3px solid #0D09C2;
+    border: 3px solid #9d0e93;
     border-radius: 2px;
     border-width: 0 0 3px 3px;
     opacity: 0;
@@ -95,7 +95,7 @@ header {
     right: 12px;
     width: 12px;
     height: 12px;
-    border: 3px solid #1B17EA;
+    border: 3px solid #9d0e93;
     border-radius: 2px;
     border-width: 3px 3px 0 0;
     opacity: 0;
@@ -109,11 +109,11 @@ header {
   }
 
 .number-menu {
-    color: #4dabf7;
+    color: #f74dc9;
 }
 
 .logo {
-    background-color: #0a192f;
+    background-color: #2f0a21;
     height: 100px;
 }
 /* FIM MENU */
@@ -122,22 +122,22 @@ main {
     display: grid;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 400px 700px 430px 430px;
+    grid-template-rows: 400px 700px 430px;
 
 }
 
 
 .icon-menu {
     font-size: 30px;
-    color: #4dabf7;
+    color: #f74dc9;
 }
 
 .text-subtitle {
-    color: #4dabf7;
+    color: #f74dc9;
 }
 
 .cv-company {
-    color: #4dabf7;
+    color: #f74dc9;
 }
 
 .cv-title {
@@ -145,7 +145,7 @@ main {
 }
 
 .presentation {
-    background-color: #0a192f;
+    background-color: #2f0a21;
     display: grid;
     width: 100%;
     grid-template-columns: 80%;
@@ -162,7 +162,7 @@ main {
 
 .presentation .name {
     font-size: 65px;
-    color: #4dabf7;
+    color: #f74dc9;
     font-family: 'OpenSans-Bold';
     line-height: 1.2;
     letter-spacing: 1.0;
@@ -176,7 +176,7 @@ main {
 
 .presentation .description {
     color: #ccd6f6;
-    background-color: #0a192f;
+    background-color: #2f0a21;
     line-height: 1.5;
     letter-spacing: 1.5;
 }
@@ -220,7 +220,7 @@ main {
 }
 
 .about-me-soft-skill span {
-    color: #4dabf7;
+    color: #f74dc9;
 }
 
 .works {
@@ -268,7 +268,7 @@ main {
     flex-grow: 1;
     flex-basis: 0;
     padding: 20px;
-    border: 1px solid #4dabf7;
+    border: 1px solid #f74dc9;
 }
 
 
@@ -287,8 +287,8 @@ main {
 }
 
 .project {
-    background-color: #051329;
-    border: 1px solid #4dabf7;
+    background-color: #441c34;
+    border: 1px solid #f74dc9;
     border-radius: 5px;
     padding: 20px;
 }
@@ -305,7 +305,7 @@ main {
 
 .project-title {
     font-weight: bold;
-    color: #4dabf7;
+    color: #f74dc9;
 }
 
 .project-list-tech {
@@ -344,12 +344,12 @@ main {
 }
 
 .contact span {
-    color: #4dabf7;
+    color: #f74dc9;
 }
 
 .contact i {
     font-size: 30px;
-    color: #4dabf7;
+    color: #f74dc9;
 
 }
 
@@ -473,22 +473,22 @@ main {
     }
 
     .nav-list a:hover {
-        background-color: #0a192f;
+        background-color: #2f0a21;
         color:white;
       }
 
     .nav-list a:after {
         transition: none;
-        border: 0px solid #0D09C2;
+        border: 0px solid #9d0e93;
     }
 
     .nav-list a:before {
         transition: none;
-        border: 0px solid #0D09C2;
+        border: 0px solid #9d0e93;
     }
 
     .menu-reponsive {
-        border: 1px solid #4dabf7;
+        border: 1px solid #f74dc9;
         margin-top: 5px;
         padding: 5px;
         animation-duration: 0.5s;
